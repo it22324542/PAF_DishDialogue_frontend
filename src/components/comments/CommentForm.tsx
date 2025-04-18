@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Send } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 
-interface CommentFormProps {
+interface CommentFormProps {  // Define what props the component expects
   postId: string;
   onSubmit: (content: string) => void;
 }
