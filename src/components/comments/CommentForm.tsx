@@ -13,7 +13,7 @@ const CommentForm: React.FC<CommentFormProps> = ({ postId, onSubmit }) => {
   
   const handleSubmit = (e: React.FormEvent) => {   // Handle form submission
     e.preventDefault();
-    if (!comment.trim()) return;
+    if (!comment.trim()) return;   // Don't submit if comment is empty or already submitting
     
     onSubmit(comment);
     setComment('');
