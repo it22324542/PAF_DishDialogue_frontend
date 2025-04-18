@@ -29,6 +29,7 @@ const CommentForm: React.FC<CommentFormProps> = ({ postId, onSubmit }) => {
         />
       </div>
       <input
+      //Comment text input 
         type="text"
         value={comment}
         onChange={(e) => setComment(e.target.value)}
