@@ -11,7 +11,7 @@ const CommentForm: React.FC<CommentFormProps> = ({ postId, onSubmit }) => {
   const [comment, setComment] = useState('');   // State for storing the comment text
   const { user } = useAuth();    // Get current user data from auth context
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {   // Handle form submission
     e.preventDefault();
     if (!comment.trim()) return;
     
