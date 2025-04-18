@@ -37,6 +37,7 @@ const CommentForm: React.FC<CommentFormProps> = ({ postId, onSubmit }) => {
         className="flex-1 border-none bg-gray-50 rounded-full px-4 py-2 focus:outline-none focus:ring-1 focus:ring-accent-500"
       />
       <button
+      //Submit button
         type="submit"
         disabled={!comment.trim()}
         className={`ml-2 text-accent-500 ${!comment.trim() ? 'opacity-50 cursor-not-allowed' : ''}`}
