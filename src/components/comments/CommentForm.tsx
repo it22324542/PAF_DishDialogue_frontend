@@ -9,7 +9,7 @@ interface CommentFormProps {  // Define what props the component expects
 
 const CommentForm: React.FC<CommentFormProps> = ({ postId, onSubmit }) => {
   const [comment, setComment] = useState('');   // State for storing the comment text
-  const { user } = useAuth();
+  const { user } = useAuth();    // Get current user data from auth context
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
