@@ -11,6 +11,7 @@ interface CommentItemProps {  // Props for the CommentItem component
   onUpdate: (id: string, content: string) => void;
 }
 
+// Functional component to display a single comment item
 const CommentItem: React.FC<CommentItemProps> = ({ comment, onDelete, onUpdate }) => {
   const { user } = useAuth();
   const [isEditing, setIsEditing] = useState(false);
