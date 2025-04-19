@@ -47,7 +47,7 @@ const LearningPlan: React.FC = () => {
       setPlans(response.data);
       setLoading(false);
     } catch (err: any) {
-      setError(err.response?.data?.message || 'Failed to fetch learning plans.');
+      setError(err.response?.data?.message || 'Failed to fetch.');
       setLoading(false);
     }
   };
