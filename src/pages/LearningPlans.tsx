@@ -35,7 +35,7 @@ const LearningPlan: React.FC = () => {
 
   const fetchPlans = async () => {
     if (!user || !user.token) {
-      setError('Please log in to view learning plans.');
+      setError('Please log in.');
       setLoading(false);
       return;
     }
