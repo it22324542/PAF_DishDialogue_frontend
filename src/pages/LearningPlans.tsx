@@ -108,7 +108,7 @@ const deletePlan = async (id: string) => {
   if (loading) {
     return (
       <div className="flex justify-center py-12">
-        <LoadingSpinner size="medium" />
+        <LoadingSpinner size="large" />
       </div>
     );
   }
@@ -117,7 +117,7 @@ const deletePlan = async (id: string) => {
     return (
       <div className="flex justify-center py-12">
         <div className="text-center">
-          <p className="text-red-600 mb-4">Please log in to manage learning plans.</p>
+          <p className="text-red-600 mb-4">Please log in.</p>
           <Link to="/login" className="inline-block">
             <Button>Log In</Button>
           </Link>
