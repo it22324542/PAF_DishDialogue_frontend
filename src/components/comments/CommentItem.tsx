@@ -19,7 +19,8 @@ const CommentItem: React.FC<CommentItemProps> = ({ comment, onDelete, onUpdate }
   
   const isOwner = user?.id === comment.userId;
   
-  const handleUpdate = () => {
+  // Handle updating the comment
+  const handleUpdate = () => { 
     onUpdate(comment.id, editContent);
     setIsEditing(false);
   };
