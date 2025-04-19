@@ -100,7 +100,7 @@ const deletePlan = async (id: string) => {
     setPlans(plans.filter((plan) => plan.id !== id));
     setError(null);
   } catch (err: any) {
-    setError(err.response?.data?.message || 'Failed to delete.');
+    setError(err.response?.data?.message || 'Failed to delete learning plan.');
   }
 };
 
@@ -108,7 +108,7 @@ const deletePlan = async (id: string) => {
   if (loading) {
     return (
       <div className="flex justify-center py-12">
-        <LoadingSpinner size="large" />
+        <LoadingSpinner size="medium" />
       </div>
     );
   }
