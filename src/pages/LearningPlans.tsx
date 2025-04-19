@@ -68,7 +68,7 @@ const LearningPlan: React.FC = () => {
       setNewPlan({ title: '', description: '' });
       setError(null);
     } catch (err: any) {
-      setError(err.response?.data?.message || 'Failed to create learning plan.');
+      setError(err.response?.data?.message || 'Failed to create.');
     }
   };
 
