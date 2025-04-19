@@ -54,7 +54,7 @@ const LearningPlan: React.FC = () => {
 
   const createPlan = async () => {
     if (!user || !newPlan.title || !newPlan.description) {
-      setError('Title and description are required.');
+      setError('Please enter title and description.');
       return;
     }
 
