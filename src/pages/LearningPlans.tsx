@@ -35,7 +35,7 @@ const LearningPlan: React.FC = () => {
 
   const fetchPlans = async () => {
     if (!user || !user.token) {
-      setError('Please log in.');
+      setError('Please log in to view learning plans.');
       setLoading(false);
       return;
     }
@@ -47,14 +47,14 @@ const LearningPlan: React.FC = () => {
       setPlans(response.data);
       setLoading(false);
     } catch (err: any) {
-      setError(err.response?.data?.message || 'Failed to fetch.');
+      setError(err.response?.data?.message || 'Failed to fetch learning plans.');
       setLoading(false);
     }
   };
 
   const createPlan = async () => {
     if (!user || !newPlan.title || !newPlan.description) {
-      setError('Please enter title and description.');
+      setError('Title and description are required.');
       return;
     }
 
@@ -68,7 +68,7 @@ const LearningPlan: React.FC = () => {
       setNewPlan({ title: '', description: '' });
       setError(null);
     } catch (err: any) {
-      setError(err.response?.data?.message || 'Failed to create.');
+      setError(err.response?.data?.message || 'Failed to create learning plan.');
     }
   };
 
@@ -85,7 +85,7 @@ const LearningPlan: React.FC = () => {
       setEditingPlan(null);
       setError(null);
     } catch (err: any) {
-      setError(err.response?.data?.message || 'Failed to update learning plan.');
+      setError(err.response?.data?.message || 'Failed to update.');
     }
   };
 
