@@ -85,7 +85,7 @@ const LearningPlan: React.FC = () => {
       setEditingPlan(null);
       setError(null);
     } catch (err: any) {
-      setError(err.response?.data?.message || 'Failed to update.');
+      setError(err.response?.data?.message || 'Failed to update learning plan.');
     }
   };
 
@@ -100,7 +100,7 @@ const deletePlan = async (id: string) => {
     setPlans(plans.filter((plan) => plan.id !== id));
     setError(null);
   } catch (err: any) {
-    setError(err.response?.data?.message || 'Failed to delete learning plan.');
+    setError(err.response?.data?.message || 'Failed to delete.');
   }
 };
 
