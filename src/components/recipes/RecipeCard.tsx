@@ -38,6 +38,8 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ post }) => {
     fetchProfile();
   }, [post.userId, user]);
 
+
+   // Handle like/unlike functionality - ( sanduni part )
   const handleLike = (e: React.MouseEvent) => {
     e.preventDefault();
     if (liked) {
