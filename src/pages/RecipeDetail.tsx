@@ -4,12 +4,14 @@ import { Heart, MessageCircle, Share2, Clock, ChefHat, ArrowLeft, Trash2, Edit }
 import { formatDistanceToNow } from 'date-fns';
 import { getPost, deletePost } from '../services/postService';
 import { getComments, createComment, deleteComment, updateComment } from '../services/commentService';
-
-
+import { getProfile } from '../services/profileService';
+import type { Profile } from '../services/profileService';
+import CommentItem from '../components/comments/CommentItem';
+import CommentForm from '../components/comments/CommentForm';
 import Button from '../components/ui/Button';
 import LoadingSpinner from '../components/ui/LoadingSpinner';
-//mport { useAuth } from '../contexts/AuthContext';
-//import { Post } from '../services/postService';
+import { useAuth } from '../contexts/AuthContext';
+import { Post } from '../services/postService';
 import { Comment } from '../services/commentService';
 
 const RecipeDetail: React.FC = () => {

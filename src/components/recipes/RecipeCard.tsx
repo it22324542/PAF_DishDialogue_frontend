@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, MessageCircle, Clock, Share2 } from 'lucide-react';
 import { formatDistanceToNow } from 'date-fns';
-//import { Post } from '../../services/postService';
-//import { getProfile } from '../../services/profileService';
+import { Post } from '../../services/postService';
+import { getProfile } from '../../services/profileService';
 import type { Profile } from '../../services/profileService';
 import { useAuth } from '../../contexts/AuthContext';
 
