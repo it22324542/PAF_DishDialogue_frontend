@@ -45,7 +45,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ post }) => {
     if (liked) {
       setLikeCount((prev: number) => prev - 1);  // Decrease like count
     } else {
-      setLikeCount((prev: number) => prev + 1);
+      setLikeCount((prev: number) => prev + 1); // Increase like count
     }
     setLiked(!liked);
   };
