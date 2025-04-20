@@ -120,7 +120,7 @@ const StoryView: React.FC = () => {
   if (loading) {
     return (
       <div className="fixed inset-0 bg-black flex items-center justify-center">
-        <LoadingSpinner color="text-white" size="medium" />
+        <LoadingSpinner color="text-white" size="large" />
       </div>
     );
   }
@@ -165,7 +165,7 @@ const StoryView: React.FC = () => {
         <div className="absolute bottom-4 right-4 flex space-x-2 z-10">
           <Link
             to={`/story/${currentStory.id}/edit`}
-            className="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-600"
+            className="bg-blue-500 text-red rounded-full p-2 hover:bg-blue-600"
             title="Edit Story"
           >
             <Edit2 className="h-5 w-5" />
