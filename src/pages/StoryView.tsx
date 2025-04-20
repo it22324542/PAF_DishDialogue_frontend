@@ -68,7 +68,7 @@ const StoryView: React.FC = () => {
         })
         .catch(error => {
           console.error('Error marking story as viewed:', error);
-          setError('Failed story as viewed');
+          setError('Failed to mark story as viewed');
         });
     }
 
@@ -106,14 +106,14 @@ const StoryView: React.FC = () => {
   };
 
   const handleDelete = async () => {
-    if (!window.confirm('Are you sure you want to delete this story?')) return;
+    if (!window.confirm('Are you want to delete this story?')) return;
 
     try {
       await deleteStory(stories[currentIndex].id);
       navigate('/');
     } catch (err) {
       console.error('Error deleting story:', err);
-      setError('Failed to delete story. Please try again.');
+      setError('Failed delete story. Please try again.');
     }
   };
 
