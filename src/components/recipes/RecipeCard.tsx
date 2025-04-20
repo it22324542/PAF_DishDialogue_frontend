@@ -47,7 +47,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ post }) => {
     } else {
       setLikeCount((prev: number) => prev + 1); // Increase like count
     }
-    setLiked(!liked);
+    setLiked(!liked);  // Toggle liked state
   };
 
   // Fallback data for profile picture and display name
