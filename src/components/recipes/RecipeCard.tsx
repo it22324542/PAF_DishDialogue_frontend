@@ -43,7 +43,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ post }) => {
   const handleLike = (e: React.MouseEvent) => {
     e.preventDefault();
     if (liked) {
-      setLikeCount((prev: number) => prev - 1);
+      setLikeCount((prev: number) => prev - 1);  // Decrease like count
     } else {
       setLikeCount((prev: number) => prev + 1);
     }
