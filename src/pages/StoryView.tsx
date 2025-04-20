@@ -119,7 +119,7 @@ const StoryView: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="fixed inset-0 bg-white flex items-center justify-center">
+      <div className="fixed inset-0 bg-black flex items-center justify-center">
         <LoadingSpinner color="text-white" size="large" />
       </div>
     );
