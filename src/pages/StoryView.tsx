@@ -68,7 +68,7 @@ const StoryView: React.FC = () => {
         })
         .catch(error => {
           console.error('Error marking story as viewed:', error);
-          setError('Failed to mark story as viewed');
+          setError('Failed story as viewed');
         });
     }
 
