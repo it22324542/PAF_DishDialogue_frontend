@@ -117,7 +117,7 @@ const deletePlan = async (id: string) => {
     return (
       <div className="flex justify-center py-12">
         <div className="text-center">
-          <p className="text-red-600 mb-4">Please log in.</p>
+          <p className="text-red-600 mb-4">Please log in to manage learning plans.</p>
           <Link to="/login" className="inline-block">
             <Button>Log In</Button>
           </Link>
@@ -181,7 +181,7 @@ const deletePlan = async (id: string) => {
 
       {/* Plans List */}
       <div className="bg-white rounded-lg shadow p-6">
-        <h2 className="text-xl font-semibold mb-4">Your Learning Plans</h2>
+        <h2 className="text-xl font-semibold mb-4">My Learning Plans</h2>
         {error && <p className="text-red-600 mb-4">{error}</p>}
         {plans.length === 0 ? (
           <p className="text-gray-500">No learning plans yet.</p>
