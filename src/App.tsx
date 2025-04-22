@@ -1,23 +1,18 @@
 import { useEffect, lazy, Suspense } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './contexts/AuthContext';
-import Layout from './components/layout/Layout';
-import LoadingSpinner from './components/ui/LoadingSpinner';
-import StoryCreate from './components/stories/StoryCreate';
-import StoryEdit from './components/stories/StoryEdit';
-import LearningPlan from './pages/LearningPlans';
-import SearchResults from './pages/SearchResults';
+
 
 // Lazy-loaded components
-const Home = lazy(() => import('./pages/Home'));
-const Login = lazy(() => import('./pages/Login'));
-const Register = lazy(() => import('./pages/Register'));
-const Profile = lazy(() => import('./pages/Profile'));
-const CreateRecipe = lazy(() => import('./pages/CreateRecipe'));
-const EditRecipe = lazy(() => import('./pages/EditRecipe')); // Add this
+//const Home = lazy(() => import('./pages/Home'));
+//const Login = lazy(() => import('./pages/Login'));
+//const Register = lazy(() => import('./pages/Register'));
+//const Profile = lazy(() => import('./pages/Profile'));
+//const CreateRecipe = lazy(() => import('./pages/CreateRecipe'));
+//const EditRecipe = lazy(() => import('./pages/EditRecipe')); // Add this
 const RecipeDetail = lazy(() => import('./pages/RecipeDetail'));
-const StoryView = lazy(() => import('./pages/StoryView'));
-const EditProfile = lazy(() => import('./pages/EditProfile'));
+//const StoryView = lazy(() => import('./pages/StoryView'));
+//const EditProfile = lazy(() => import('./pages/EditProfile'));
 
 function App() {
   const { user, loading, checkAuth } = useAuth();
