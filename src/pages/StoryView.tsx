@@ -106,14 +106,14 @@ const StoryView: React.FC = () => {
   };
 
   const handleDelete = async () => {
-    if (!window.confirm('Are you want to delete this story?')) return;
+    if (!window.confirm('Are you sure you want to delete this story?')) return;
 
     try {
       await deleteStory(stories[currentIndex].id);
       navigate('/');
     } catch (err) {
       console.error('Error deleting story:', err);
-      setError('Failed delete story. Please try again.');
+      setError('Failed to delete story. Please try again.');
     }
   };
 
