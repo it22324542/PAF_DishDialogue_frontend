@@ -113,7 +113,7 @@ const StoryView: React.FC = () => {
       navigate('/');
     } catch (err) {
       console.error('Error deleting story:', err);
-      setError('Failed to delete story. Please try again.');
+      setError('Failed to delete story. try again.');
     }
   };
 
