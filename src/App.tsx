@@ -3,10 +3,10 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './contexts/AuthContext';
 import Layout from './components/layout/Layout';
 import LoadingSpinner from './components/ui/LoadingSpinner';
-import StoryCreate from './components/stories/StoryCreate';
-import StoryEdit from './components/stories/StoryEdit';
-import LearningPlan from './pages/LearningPlans';
-import SearchResults from './pages/SearchResults';
+//import StoryCreate from './components/stories/StoryCreate';
+//import StoryEdit from './components/stories/StoryEdit';
+//import LearningPlan from './pages/LearningPlans';
+//import SearchResults from './pages/SearchResults';
 
 // Lazy-loaded components
 const CreateRecipe = lazy(() => import('./pages/CreateRecipe'));
