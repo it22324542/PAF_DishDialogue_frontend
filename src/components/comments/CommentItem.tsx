@@ -5,12 +5,13 @@ import { Comment } from '../../services/commentService';
 import { useAuth } from '../../contexts/AuthContext';
 import Button from '../ui/Button';
 
-interface CommentItemProps {
+interface CommentItemProps {  // Props for the CommentItem component
   comment: Comment;
   onDelete: (id: string) => void;
   onUpdate: (id: string, content: string) => void;
 }
 
+// Functional component to display a single comment item
 const CommentItem: React.FC<CommentItemProps> = ({ comment, onDelete, onUpdate }) => {
   const { user } = useAuth();
   const [isEditing, setIsEditing] = useState(false);
@@ -18,7 +19,8 @@ const CommentItem: React.FC<CommentItemProps> = ({ comment, onDelete, onUpdate }
   
   const isOwner = user?.id === comment.userId;
   
-  const handleUpdate = () => {
+  // Handle updating the comment
+  const handleUpdate = () => { 
     onUpdate(comment.id, editContent);
     setIsEditing(false);
   };
