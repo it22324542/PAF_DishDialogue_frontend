@@ -125,7 +125,7 @@ const Register: React.FC = () => {
             <p className="text-sm text-gray-600">
               Already have an account?{' '}
               <Link to="/login" className="text-accent-600 hover:underline">
-                Log in
+                Log In
               </Link>
             </p>
           </div>
