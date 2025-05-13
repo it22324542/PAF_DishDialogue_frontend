@@ -41,7 +41,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ post }) => {
 
    // Handle like/unlike functionality - ( sanduni part )
   const handleLike = (e: React.MouseEvent) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent page refresh on click
     if (liked) {
       setLikeCount((prev: number) => prev - 1);  // Decrease like count
     } else {
