@@ -2,7 +2,7 @@ import { useEffect, lazy, Suspense } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './contexts/AuthContext';
 import Layout from './components/layout/Layout';
-import LoadingSpinner from './components/ui/LoadingSpinner';
+//import LoadingSpinner from './components/ui/LoadingSpinner';
 //import StoryCreate from './components/stories/StoryCreate';
 //import StoryEdit from './components/stories/StoryEdit';
 //import LearningPlan from './pages/LearningPlans';
@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     checkAuth();
   }, [checkAuth]);
-
+/*
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
@@ -32,7 +32,7 @@ function App() {
         <div className="min-h-screen flex items-center justify-center bg-gray-50">
           <LoadingSpinner size="large" />
         </div>
-      }
+      }*/
     >
       <Routes>
         <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
